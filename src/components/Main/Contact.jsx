@@ -4,32 +4,23 @@ import '../../pages/Contact/ContactPage.css'
 import Typical from 'react-typical';
 
 /* Multi idioma */
-import { FormattedMessage } from 'react-intl';
+
 
 const Contact = () => (
 
     <section className="contactos" id="contactos">
 
         <h2 className="heading">
-            <FormattedMessage
-                id='contact'
-                defaultMessage='Contact'
-            />
+            Contact
         </h2>
         <h3 className="titulo" data-aos="fade-left" data-aos-delay="300">
-            <FormattedMessage
-                id='contact-info'
-                defaultMessage='Contact me by: '
-            />
+            Contact me by: 
             <Typical
                 className="site-contacto"
                 loop={Infinity}
                 wrapper="b"
                 steps={[
                     'Gmail', 1500,
-                    'WhatsApp', 1500,
-                    'Instragram', 1500,
-                    'Telegram', 1500,
                     'Linkedin', 1500,
                     'Github', 1500,
                 ]}
@@ -38,7 +29,7 @@ const Contact = () => (
         </h3>
 
         <div className="icons">
-            <a href="mailto:estebancarrizo619@gmail.com" target="_blank" rel="noopener noreferrer" data-aos="zoom-in">
+            <a href="mailto:https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank" rel="noopener noreferrer" data-aos="zoom-in">
                 <div className="layer">
                     <span></span>
                     <span></span>
@@ -50,7 +41,7 @@ const Contact = () => (
                     Gmail
                 </div>
             </a>
-            <a href="https://api.whatsapp.com/send?phone=5493815360966" target="_blank" rel="noopener noreferrer" data-aos="zoom-in">
+            {/* <a href="https://api.whatsapp.com/send?phone=5493815360966" target="_blank" rel="noopener noreferrer" data-aos="zoom-in">
                 <div className="layer">
                     <span></span>
                     <span></span>
@@ -61,8 +52,8 @@ const Contact = () => (
                 <div className="text">
                     Whatsapp
                 </div>
-            </a>
-            <a href="https://www.instagram.com/nahuelcarrizolc/" target="_blank" rel="noopener noreferrer" data-aos="zoom-in">
+            </a> */}
+            {/* <a href="https://www.instagram.com/nahuelcarrizolc/" target="_blank" rel="noopener noreferrer" data-aos="zoom-in">
                 <div className="layer">
                     <span></span>
                     <span></span>
@@ -73,8 +64,8 @@ const Contact = () => (
                 <div className="text">
                     Instagram
                 </div>
-            </a>
-            <a href="https://t.me/estebanU20" target="_blank" rel="noopener noreferrer" data-aos="zoom-in">
+            </a> */}
+            {/* <a href="https://t.me/estebanU20" target="_blank" rel="noopener noreferrer" data-aos="zoom-in">
                 <div className="layer">
                     <span></span>
                     <span></span>
@@ -85,8 +76,8 @@ const Contact = () => (
                 <div className="text">
                     telegram
                 </div>
-            </a>
-            <a href="https://www.linkedin.com/in/esteban-nahuel-carrizo-69715422b/" target="_blank" rel="noopener noreferrer" data-aos="zoom-in">
+            </a> */}
+            <a href="https://www.linkedin.com/in/vanshikazawar/" target="_blank" rel="noopener noreferrer" data-aos="zoom-in">
                 <div className="layer">
                     <span></span>
                     <span></span>
@@ -98,7 +89,7 @@ const Contact = () => (
                     Linkedin
                 </div>
             </a>
-            <a href="https://github.com/Nahuel61920/" target="_blank" rel="noopener noreferrer" data-aos="zoom-in">
+            <a href="https://github.com/vanshikazawar27" target="_blank" rel="noopener noreferrer" data-aos="zoom-in">
                 <div className="layer">
                     <span></span>
                     <span></span>

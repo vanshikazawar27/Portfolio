@@ -38,8 +38,8 @@ const DarkMode = () => {
                     id="darkMode"
                     onClick={(e) => switchTheme(e)}
                 >
-                <span><i className="fas fa-sun"></i></span>
-                <span><i className="fas fa-moon"></i></span>
+                {/* <span><i className="fas fa-sun"></i></span>
+                <span><i className="fas fa-moon"></i></span> */}
             </div>
         </div>
     );

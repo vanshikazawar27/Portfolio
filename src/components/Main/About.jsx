@@ -5,47 +5,32 @@ import cv from '../../cv/cv.pdf';
 import { ButtomGet } from '../ButtomGet/ButtomGet';
 
 /* Multi idioma */
-import { FormattedMessage } from 'react-intl';
+
 
 const About = () => (
     <section className="sobre-mi" id="sobre-mi">
         <h2 className="heading">
-            <FormattedMessage
-                id='about'
-                defaultMessage='About me'
-            />
+            About me
         </h2>
 
         <div className="row container">
             <div className="columns" data-aos="fade-right" data-aos-delay="300">
                 <h3>
-                    <FormattedMessage
-                        id='im'
-                        defaultMessage='who I am'
-                    />
+                    who I am
                 </h3>
                 <h4>
-                    <FormattedMessage
-                        id='description'
-                        defaultMessage='My name is Esteban Nahuel Carrizo and I am a full stack developer.'
-                    />
+                    My name is Vanshika Zawar and I am a full stack developer.
                 </h4>
                 <p>
-                    <FormattedMessage
-                        id='my-description'
-                        defaultMessage='I have been working on web designing and web development for 4 years. Constantly updating the technologies I already master, but also looking to learn new technologies to enrich my skills and improve my good practices as a developer.'
-                    />
+                    I have been working on web designing and web development. Constantly updating the technologies I already learned, but also looking to learn new technologies to enrich my skills and improve my good practices as a developer.
                 </p>
                 <ul>
                     <li>
                         <p>
                             <span>
-                                <FormattedMessage
-                                    id='years'
-                                    defaultMessage='Age:'
-                                />
+                                Age:
                             </span>
-                            25
+                             20
                         </p>
                     </li>
                     <li>
@@ -53,30 +38,24 @@ const About = () => (
                             <span>
                                 Hobbies:{" "}
                             </span>
-                                Chess, Football and Programming
+                                Drawing , Art and Craft and Programming
                         </p>
                     </li>
                     <li>
-                        <p><span>Email:</span> estebancarrizo619@gmail.com</p>
+                        <p><span>Email:</span> vanshikazawar@gmail.com</p>
                     </li>
                     <li>
                         <p>
                             <span>
-                                <FormattedMessage
-                                    id='from'
-                                    defaultMessage='From:'
-                                />
+                                From:
                             </span>
-                            Tucumán, Argentina
+                             Jalgaon, Maharashtra, India
                         </p>
                     </li>
                 </ul>
                 <div className="mas-info">
                     <a href={cv} target="_blank" rel="noopener noreferrer" download="cv.pdf" className="btn-codigo buttonDownload">
-                        <FormattedMessage
-                            id='btn-cv'
-                            defaultMessage='Download CV'
-                        />
+                        Download CV
                     </a>
                     <div className='mas-info-btn'>
                     <Link to="/about">
@@ -101,18 +80,18 @@ const About = () => (
                         <img alt="Js" className="icons-skils" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" />
                         <h5>JavaScript</h5>
                     </div>
-                    <div>
+                    {/* <div>
                         <img alt="Sass" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
                         <h5>Sass</h5>
-                    </div>
+                    </div> */}
                     <div>
                         <img alt="Bootstrap" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
                         <h5>Bootstrap</h5>
                     </div>
-                    <div>
+                    {/* <div>
                         <img alt="jQuery" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-plain-wordmark.svg" />
                         <h5>jQuery</h5>
-                    </div>
+                    </div> */}
                     <div>
                         <img alt="React" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
                         <h5>React</h5>
@@ -128,42 +107,39 @@ const About = () => (
                         <img alt="Nodejs" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
                         <h5>NodeJs</h5>
                     </div>
-                    <div>
+                    {/* <div>
                         <img alt="express" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" />
                         <h5>Express</h5>
-                    </div>
+                    </div> */}
                     <div>
                         <img alt="php" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
                         <h5>PHP</h5>
                     </div>
-                    <div>
+                    {/* <div>
                         <img alt="laravel" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" />
                         <h5>Laravel</h5>
-                    </div>
+                    </div> */}
                     <div>
                         <img alt="mysql" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
                         <h5>MySQL</h5>
                     </div>
-                    <div>
+                    {/* <div>
                         <img alt="postgresql" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" />
-                        <h5>PostgreSQL</h5>
-                    </div>
+                        <h5>PostgreSQL</h5> */}
+                    {/* </div> */}
                     <div>
                         <img alt="mongodb" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain-wordmark.svg" />
                         <h5>MongodDB</h5>
                     </div>
                 </div>
                 <h4>
-                    <FormattedMessage
-                        id='tools'
-                        defaultMessage='Tools'
-                    />
+                    Tools
                 </h4>
                 <div className="skill">
-                    <div>
+                    {/* <div>
                         <img alt="figma" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" title="figma" />
                         <h5>Figma</h5>
-                    </div>
+                    </div> */}
                     <div>
                         <img alt="photoshop" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" title="Photoshop" />
                         <h5>Photoshop</h5>
