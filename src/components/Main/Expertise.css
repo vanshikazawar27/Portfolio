@@ -1,0 +1,109 @@
+/* ===== Expertise Block - no outer box, transparent like rest of site ===== */
+
+.exp-block {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+    margin-bottom: 3rem;
+}
+
+/* ===== Inner Skill Card Grid ===== */
+
+.exp-card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.exp-skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.8rem;
+    background: rgba(255, 255, 255, 0.04);
+    border: .1rem solid rgba(255, 255, 255, 0.08);
+    border-radius: .5rem;
+    padding: 2rem 1.2rem;
+    transition: all .3s ease;
+}
+
+.exp-skill-card:hover {
+    background: var(--green);
+    border-color: var(--green);
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 2rem rgba(0, 229, 254, 0.2);
+}
+
+.exp-skill-card:hover .exp-card-name {
+    color: var(--black);
+}
+
+.exp-skill-card:hover .exp-card-info {
+    color: var(--black);
+}
+
+/* Light mode overrides */
+body.light .exp-skill-card {
+    background: #fff;
+    border: var(--borde);
+    box-shadow: var(--box-shadow);
+}
+
+body.light .exp-skill-card:hover {
+    background: var(--green);
+    border-color: transparent;
+    box-shadow: 0 1rem 2rem rgba(0, 229, 254, 0.25);
+}
+
+/* ===== Card Content ===== */
+
+.exp-card-img {
+    width: 6rem;
+    height: 6rem;
+    object-fit: contain;
+}
+
+.exp-card-name {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+    transition: color .3s ease;
+}
+
+body.light .exp-card-name {
+    color: var(--black);
+}
+
+.exp-skill-card:hover .exp-card-name {
+    color: var(--black);
+}
+
+.exp-card-info {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: var(--light-color);
+    margin: 0;
+    text-transform: none;
+    transition: color .3s ease;
+}
+
+.exp-skill-card:hover .exp-card-info {
+    color: var(--black);
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 1100px) {
+    .exp-card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .exp-card-grid {
+        grid-template-columns: 1fr;
+    }
+}
