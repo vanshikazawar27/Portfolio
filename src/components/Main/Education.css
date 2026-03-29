@@ -1,0 +1,218 @@
+/* Education Section - Expertise Theme Sync */
+.education {
+    padding: 0; /* Remove top/bottom padding to match Expertise section spacing */
+    width: 100%;
+    margin-bottom: 5rem;
+    overflow: hidden !important;
+}
+
+.education .row {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.timeline {
+    position: relative;
+    width: 100%;
+    padding: 3rem 0; /* Vertical spacing for items */
+}
+
+/* Subtle Timeline Line - Expertise uses direct cards, so we keep this minimal */
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 4.5rem;
+    top: 0;
+    width: .1rem; 
+    height: 100%;
+    background: rgba(0, 229, 254, 0.1); /* Very faint line */
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 4rem; /* Reduced to match grid-like spacing */
+    padding-left: 9rem;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 3.65rem;
+    top: 1.2rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+    background: var(--green);
+    border: .4rem solid var(--white);
+    box-shadow: 0 0 1rem rgba(0, 229, 254, 0.3);
+    z-index: 10;
+}
+
+body.dark .timeline-dot {
+    border: .4rem solid #121f41;
+}
+
+.timeline-date {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--green);
+    margin-bottom: 0.5rem;
+}
+
+/* Card Styling - Exact 1:1 match for Expertise cards */
+.timeline-content {
+    background: #fff;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border: var(--borde);
+    padding: 2rem 1.2rem; /* Exact Expertise padding */
+    transition: all .3s ease;
+    position: relative;
+    text-align: left; /* Maintaining left-align as per user 'no' to previous plan */
+}
+
+body.dark .timeline-content {
+    background: rgba(255, 255, 255, 0.04); /* Exact Expertise dark opacity */
+    border: .1rem solid rgba(255, 255, 255, 0.08); /* Exact Expertise dark border */
+    box-shadow: none;
+}
+
+/* Hover State - Exact Match and Contrast Fix */
+.timeline-content:hover,
+body.dark .timeline-content:hover {
+    background: var(--green) !important;
+    border-color: var(--green) !important;
+    transform: translateY(-5px); /* Exact Expertise translateY */
+    box-shadow: 0 1rem 2rem rgba(0, 229, 254, 0.2); /* Exact Expertise shadow */
+}
+
+/* Force All Inner elements to Black on Hover - Fixes the Cyan-on-Cyan bug */
+.timeline-content:hover *,
+body.dark .timeline-content:hover * {
+    color: var(--black) !important;
+    border-color: var(--black) !important;
+}
+
+/* Symbolic Icon Badge - Balanced with card weight */
+.education-icon {
+    position: absolute;
+    top: -2.3rem;
+    right: 2rem;
+    width: 5rem;
+    height: 5rem;
+    background: var(--green);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 229, 254, 0.2);
+    z-index: 5;
+    transition: all .3s ease;
+}
+
+.timeline-content:hover .education-icon {
+    background: var(--black) !important;
+    box-shadow: none;
+}
+
+.education-icon i {
+    font-size: 2rem;
+    color: var(--black);
+    transition: color .3s ease;
+}
+
+.timeline-content:hover .education-icon i {
+    color: var(--green) !important;
+}
+
+body.dark .education-icon {
+    box-shadow: none;
+}
+
+/* Typography Consistency with Expertise */
+.timeline-content h3 {
+    font-size: 1.8rem; /* Scaled down to match Expertise card weight */
+    font-weight: 700;
+    color: var(--black);
+    margin: 0 0 0.8rem 0;
+    text-transform: capitalize;
+    transition: color .3s ease;
+}
+
+body.dark .timeline-content h3 {
+    color: #fff;
+}
+
+.timeline-content p {
+    font-size: 1.4rem; /* Scaled to Expertise card-info size */
+    color: var(--light-color);
+    margin: 0 0 0.5rem 0;
+    text-transform: none;
+    transition: color .3s ease;
+    line-height: 1.8;
+}
+
+.timeline-content .institution {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--secundario);
+    text-transform: none;
+    margin-bottom: 0.3rem;
+    transition: color .3s ease;
+}
+
+.timeline-content .location {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--light-color);
+    margin-bottom: 1.5rem;
+    text-transform: none;
+    transition: color .3s ease;
+}
+
+.education-highlights {
+    list-style: none;
+    padding-left: 0;
+}
+
+.education-highlights li {
+    font-size: 1.3rem; /* Matches exp-card-info size */
+    color: var(--black);
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+    text-transform: none;
+    transition: color .3s ease;
+}
+
+body.dark .education-highlights li {
+    color: #a0aec0; /* Match exp-card-info default grey */
+}
+
+.education-highlights li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: var(--green);
+    font-weight: bold;
+    transition: color .3s ease;
+}
+
+/* Responsive Overrides */
+@media (max-width: 768px) {
+    .timeline::before {
+        left: 2.2rem;
+    }
+    .timeline-dot {
+        left: 1.3rem;
+    }
+    .timeline-item {
+        padding-left: 5rem;
+    }
+    .timeline-content {
+        padding: 2rem 1.5rem;
+    }
+}

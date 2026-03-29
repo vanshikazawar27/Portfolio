@@ -45,6 +45,9 @@ const Header = () => {
                 <Link to="sobre-mi" spy={true} offset={-150} href="#sobre-mi">
                     About me
                 </Link>
+                <Link to="education" spy={true} offset={-150} href="#education">
+                    Education
+                </Link>
                 <Link to="servicios" spy={true} offset={-150} href="#servicios">
                     Expertise
                 </Link>
