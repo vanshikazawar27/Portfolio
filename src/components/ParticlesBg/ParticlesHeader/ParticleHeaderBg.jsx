@@ -187,9 +187,10 @@ export default function ParticleHeaderBg() {
                   height: 20,
                 },
                 {
-                  src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
+                  src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
                   width: 20,
                   height: 20,
+                  style: { filter: "invert(1)" },
                 },
                 {
                   src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",

@@ -80,18 +80,10 @@ const About = () => (
                         <img alt="Js" className="icons-skils" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" />
                         <h5>JavaScript</h5>
                     </div>
-                    {/* <div>
-                        <img alt="Sass" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
-                        <h5>Sass</h5>
-                    </div> */}
                     <div>
                         <img alt="Bootstrap" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
                         <h5>Bootstrap</h5>
                     </div>
-                    {/* <div>
-                        <img alt="jQuery" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-plain-wordmark.svg" />
-                        <h5>jQuery</h5>
-                    </div> */}
                     <div>
                         <img alt="React" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
                         <h5>React</h5>
@@ -100,6 +92,10 @@ const About = () => (
                         <img alt="Typescript" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" />
                         <h5>Typescript</h5>
                     </div>
+                    <div>
+                        <img alt="Tailwind" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original-wordmark.svg" />
+                        <h5>Tailwind</h5>
+                    </div>
                 </div>
                 <h4>Back-End</h4>
                 <div className="skill">
@@ -107,28 +103,24 @@ const About = () => (
                         <img alt="Nodejs" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
                         <h5>NodeJs</h5>
                     </div>
-                    {/* <div>
-                        <img alt="express" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" />
-                        <h5>Express</h5>
-                    </div> */}
+                    <div>
+                        <img alt="java" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
+                        <h5>Java</h5>
+                    </div>
                     <div>
                         <img alt="php" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
                         <h5>PHP</h5>
                     </div>
-                    {/* <div>
-                        <img alt="laravel" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" />
-                        <h5>Laravel</h5>
-                    </div> */}
                     <div>
                         <img alt="mysql" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
                         <h5>MySQL</h5>
                     </div>
-                    {/* <div>
-                        <img alt="postgresql" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" />
-                        <h5>PostgreSQL</h5> */}
-                    {/* </div> */}
                     <div>
-                        <img alt="mongodb" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain-wordmark.svg" />
+                        <img alt="postgresql" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg" />
+                        <h5>PostgreSQL</h5> 
+                    </div>
+                     <div>
+                         <img alt="mongodb" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain-wordmark.svg" />
                         <h5>MongodDB</h5>
                     </div>
                 </div>
@@ -136,10 +128,10 @@ const About = () => (
                     Tools
                 </h4>
                 <div className="skill">
-                    {/* <div>
+                     <div>
                         <img alt="figma" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" title="figma" />
                         <h5>Figma</h5>
-                    </div> */}
+                    </div>
                     <div>
                         <img alt="photoshop" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" title="Photoshop" />
                         <h5>Photoshop</h5>
@@ -151,6 +143,19 @@ const About = () => (
                         <img alt="git" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" title="git" />
                         <h5>Git</h5>
                     </div>
+                     <div>
+                        <img alt="github" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" title="github" />
+                        <h5>Github</h5>
+                    </div>
+                    <div>
+                        <img alt="vercel" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg" title="vercel" />
+                        <h5>Vercel</h5>
+                    </div>    
+                    <div>
+                        <img alt="netlify" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original-wordmark.svg" title="netlify" />
+                        <h5>Netlify</h5>
+                    </div>
+        
                 </div>
             </div>
         </div>
