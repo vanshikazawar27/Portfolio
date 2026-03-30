@@ -1,0 +1,212 @@
+.certificates-page {
+    padding-top: 15rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+    transition: background-color 0.3s ease;
+}
+
+body.dark .certificates-page {
+    background-color: var(--bg-color); /* Assuming standard dark bg */
+}
+
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 3rem;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto 5rem;
+}
+
+.cert-card {
+    background-color: var(--white);
+    border: var(--borde);
+    box-shadow: var(--box-shadow);
+    border-radius: 20px;
+    padding: 2.5rem 2rem 2rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    min-height: 400px;
+}
+
+body.dark .cert-card {
+    background-color: var(--black);
+    border: var(--borde-claro);
+    box-shadow: var(--box-shadow-claro);
+}
+
+.cert-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.15);
+}
+
+body.dark .cert-card:hover {
+    box-shadow: 0 1rem 3rem rgba(255,255,255,0.05);
+}
+
+/* Background watermark text */
+.cert-watermark {
+    position: absolute;
+    right: -2rem;
+    top: 50%;
+    transform: translateY(-50%) rotate(90deg);
+    font-size: 8rem;
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.05);
+    pointer-events: none;
+    user-select: none;
+    transform-origin: center right;
+    letter-spacing: 0.2em;
+}
+
+body.dark .cert-watermark {
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.05);
+}
+
+/* The glowing badge icon */
+.cert-badge-wrapper {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cert-badge-glow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    filter: blur(15px);
+    opacity: 0.4;
+}
+
+body.dark .cert-badge-glow {
+    opacity: 0.7;
+}
+
+.cert-badge-icon {
+    position: relative;
+    z-index: 2;
+    font-size: 2rem;
+}
+
+/* Category line */
+.cert-category-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.cert-line {
+    width: 20px;
+    height: 2px;
+}
+
+.cert-category {
+    font-size: 1rem;
+    letter-spacing: 2px;
+    color: var(--light-color);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* Title */
+.cert-title {
+    font-size: 2.2rem;
+    color: var(--black);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+body.dark .cert-title {
+    color: var(--white);
+}
+
+/* Divider */
+.cert-divider {
+    height: 1px;
+    background-color: rgba(0,0,0,0.1);
+    margin: 2rem 0;
+    width: 100%;
+}
+
+body.dark .cert-divider {
+    background-color: rgba(255,255,255,0.1);
+}
+
+/* Footer (Issuer/Date) */
+.cert-footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.cert-meta-label {
+    font-size: 1.1rem;
+    color: var(--light-color);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.cert-meta-value {
+    font-size: 1.4rem;
+    color: var(--black);
+    font-weight: 700;
+}
+
+body.dark .cert-meta-value {
+    color: var(--white);
+}
+
+.text-right {
+    text-align: right;
+}
+
+/* Bottom Action */
+.cert-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.verify-text {
+    font-size: 1.2rem;
+    color: var(--black);
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+body.dark .verify-text {
+    color: var(--white);
+}
+
+.verify-text svg {
+    stroke: var(--secundario);
+}
+
+.cert-action-dash {
+    width: 3px;
+    height: 15px;
+    border-radius: 2px;
+}
