@@ -21,6 +21,7 @@ const Contact = () => (
                 wrapper="b"
                 steps={[
                     'Gmail', 1500,
+                    'Twitter', 1500,
                     'Linkedin', 1500,
                     'Github', 1500,
                 ]}
@@ -41,18 +42,18 @@ const Contact = () => (
                     Gmail
                 </div>
             </a>
-            {/* <a href="https://api.whatsapp.com/send?phone=5493815360966" target="_blank" rel="noopener noreferrer" data-aos="zoom-in">
+            <a href="https://x.com/vanshikazawar" target="_blank" rel="noopener noreferrer" data-aos="zoom-in">
                 <div className="layer">
                     <span></span>
                     <span></span>
                     <span></span>
                     <span></span>
-                    <span className="fab fa-whatsapp"></span>
+                    <span className="fab fa-twitter"></span>
                 </div>
                 <div className="text">
-                    Whatsapp
+                    Twitter
                 </div>
-            </a> */}
+            </a>
             {/* <a href="https://www.instagram.com/nahuelcarrizolc/" target="_blank" rel="noopener noreferrer" data-aos="zoom-in">
                 <div className="layer">
                     <span></span>

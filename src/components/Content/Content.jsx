@@ -46,17 +46,17 @@ const Content = () => (
                     </a>
                     <a className="button" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="1200">
                         <div className="icon">
-                            <i className="fab fa-gmail"></i>
+                            <i className="fas fa-envelope"></i>
                         </div>
                         <span>Gmail</span>
                     </a>
-                    {/* <a className="button" href="https://www.instagram.com/nahuelcarrizolc/" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="1600">
+                    <a className="button" href="https://x.com/vanshikazawar" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="1600">
                         <div className="icon">
-                            <i className="fab fa-instagram"></i>
+                            <i className="fab fa-twitter"></i>
                         </div>
-                        <span>Instagram</span>
+                        <span>Twitter</span>
                     </a>
-                    <a className="button" href="https://api.whatsapp.com/send?phone=5493815360966" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="1800">
+                    {/* <a className="button" href="https://api.whatsapp.com/send?phone=5493815360966" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="1800">
                         <div className="icon">
                             <i className="fab fa-whatsapp"></i>
                         </div>
