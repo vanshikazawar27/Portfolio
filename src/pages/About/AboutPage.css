@@ -195,6 +195,14 @@ section .row .columns .skill img:hover {
     transform: scale(1.2);
 }
 
+body.dark .icon-black-to-white {
+    background-color: #ffffff;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    box-shadow: var(--box-shadow);
+}
+
 /********************** Sobre-mi-page **********************/
 
 .sobre-mi-seccion{

@@ -32,7 +32,7 @@ const certificates = [
         watermark: "INT",
         issuer: "Paarsh Infotech Pvt. Ltd.",
         date: "2024",
-        color: "#00f0ff", /* Cyan */
+        color: "var(--green)",
         image: "internship.png"
     },
     {
@@ -42,7 +42,7 @@ const certificates = [
         watermark: "OFFICE",
         //issuer: "Microsoft",
         date: "2025",
-        color: "#ff00ff", /* Magenta */
+        color: "var(--secundario)",
         image: "microsoftoffice.png"
     },
     {
@@ -52,7 +52,7 @@ const certificates = [
         watermark: "AI",
         issuer: "Outskill",
         date: "2026",
-        color: "#8a2be2", /* Purple */
+        color: "var(--green)",
         image: "gen-ai.png"
     }
 ];

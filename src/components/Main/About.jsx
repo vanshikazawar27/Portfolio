@@ -133,7 +133,7 @@ const About = () => (
                         <h5>Figma</h5>
                     </div>
                     <div>
-                        <img alt="photoshop" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" title="Photoshop" />
+                        <img alt="photoshop" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-original.svg" title="Photoshop" />
                         <h5>Photoshop</h5>
                     </div>
                     <div>
@@ -144,11 +144,11 @@ const About = () => (
                         <h5>Git</h5>
                     </div>
                      <div>
-                        <img alt="github" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" title="github" />
+                        <img alt="github" className="icons-skils icon-black-to-white" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" title="github" />
                         <h5>Github</h5>
                     </div>
                     <div>
-                        <img alt="vercel" className="icons-skils" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg" title="vercel" />
+                        <img alt="vercel" className="icons-skils icon-black-to-white" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg" title="vercel" />
                         <h5>Vercel</h5>
                     </div>    
                     <div>
