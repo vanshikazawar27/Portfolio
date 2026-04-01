@@ -6,13 +6,9 @@ import HeaderPage from '../../components/Header/HeaderPage';
 import Footer from '../../components/Footer/Footer';
 import ParticleBackground from "../../components/ParticlesBg/ParticleBackground";
 import ScrollToTop from '../../components/ScrollToTop/ScrollToTop';
-import cv from '../../cv/cv.pdf';
-
-/* Multi idioma */
-
-
-/* Img */
 import imgabout from '../../img/me.jpeg';
+
+const cv = "https://res.cloudinary.com/dz9hmrqax/image/upload/v1775019759/Vanshika_Resume_cq47ce.jpg";
 
 const About = () => {
 
@@ -42,7 +38,7 @@ const About = () => {
             <div className="sobre-mi-img-container">
               <img src={imgabout} alt="" className="sobre-mi-img" />
               
-              <a href={cv} target="_blank" rel="noopener noreferrer" download="cv.pdf" className="btn-codigo cv buttonDownload">
+              <a href={cv} target="_blank" rel="noopener noreferrer" className="btn-codigo cv buttonDownload">
                   Download CV
               </a>
             </div>
