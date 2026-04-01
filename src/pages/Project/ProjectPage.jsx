@@ -18,7 +18,6 @@ const proyectsImg = require.context('../../img', true);
 
 const Project = () => {
     const [estadoModal18, cambiarEstadoModal18] = useState(false);
-    const [estadoModal17, cambiarEstadoModal17] = useState(false);
 
     return (
         <div>
@@ -43,11 +42,6 @@ const Project = () => {
                     <div className="projects__item">
                         <a onClick={() => cambiarEstadoModal18(!estadoModal18)}>
                             <img src={proyectsImg(`./quickcart.png`)} alt="QuickCart" className="projects__img" />
-                        </a>
-                    </div>
-                    <div className="projects__item">
-                        <a onClick={() => cambiarEstadoModal17(!estadoModal17)}>
-                            <img src={proyectsImg(`./Resolvelt.png`)} alt="ResolveIt" className="projects__img" />
                         </a>
                     </div>
                 </section>
@@ -85,38 +79,7 @@ const Project = () => {
                 </div>
             </Modal>
 
-            <Modal
-                estado={estadoModal17}
-                cambiarEstado={cambiarEstadoModal17}
-            >
-                <div className="content-modal">
-                    <div className="pw-content">
-                        <div className="eins-modal-preview"><img src={proyectsImg(`./Resolvelt.png`)} alt="ResolveIt" /></div>
-                        <div className="eins-modal-text">
-                            <p>
-                                ResolveIt - Complaint Management System
-                            </p>
-                            <p>
-                                A Java Servlet/JSP based web application for managing user complaints and issues. This project provides a platform where users can submit complaints, and administrators can track, update, and manage them.
-                            </p>
-                            <div className="eins-modal-text-2">
-                                <span>Repo:</span> <a href="https://github.com/vanshikazawar27/ResolveIt" target="_blank" rel="noreferrer">https://github.com/vanshikazawar27/ResolveIt</a><br/>
-                                <span>Demo:</span> <a href="https://quickcart-tau-ten.vercel.app/" target="_blank" rel="noreferrer">https://quickcart-tau-ten.vercel.app/</a>
-                            </div>
-                            <div className="eins-modal-text-3">
-                                <span>Used technology:</span>
-                                <div className="eins-modal-tec">
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java" />
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" alt="MySQL" />
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" />
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/maven/maven-original.svg" alt="Maven" />
-                                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/chartjs/chartjs-original-wordmark.svg" alt="Chart.js" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </Modal>
+
 
             <ScrollToTop />
             <Footer />

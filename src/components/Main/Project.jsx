@@ -69,28 +69,6 @@ const Project = () => {
                             <a href="https://github.com/vanshikazawar27/QuickCart" className="custom-btn btn-codigo" target="_blank" rel="noopener noreferrer">Repository</a>
                         </div>
                     </SwiperSlide>
-                    <SwiperSlide className='caja'>
-                        <img
-                            src={proyectImg(`./Resolvelt.png`)}
-                            alt='ResolveIt'
-
-                        />
-                        <div className="content">
-                            <h3>ResolveIt</h3>
-                            <p>
-                                Complaint Management System
-                            </p>
-                            <p className="tecnologias">
-                                Java
-                                <span> -</span> MySQL
-                                <span> -</span> Bootstrap
-                                <span> -</span> Maven
-                                <span> -</span> Chart.js
-                            </p>
-                            <a href="https://quickcart-tau-ten.vercel.app/" className="custom-btn btn" target="_blank" rel="noopener noreferrer"><span>Demo</span></a>
-                            <a href="https://github.com/vanshikazawar27/ResolveIt" className="custom-btn btn-codigo" target="_blank" rel="noopener noreferrer">Repository</a>
-                        </div>
-                    </SwiperSlide>
                 </Swiper>
                 <div className="swiper-pagination"></div>
             </div>
