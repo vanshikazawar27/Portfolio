@@ -1,0 +1,50 @@
+.parallax-bg{
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -2;
+  overflow: hidden;
+  --px: 0;
+  --py: 0;
+}
+
+.parallax-layer{
+  position: absolute;
+  inset: -30%;
+  opacity: 0.55;
+  transform: translate3d(calc(var(--px) * 16px), calc(var(--py) * 12px), 0);
+  transition: opacity 0.25s ease;
+}
+
+.parallax-layer.layer-1{
+  background: radial-gradient(900px circle at 20% 20%, rgba(0,229,254,0.20), rgba(0,0,0,0) 60%);
+}
+
+.parallax-layer.layer-2{
+  background: radial-gradient(700px circle at 80% 30%, rgba(21,184,202,0.18), rgba(0,0,0,0) 58%);
+  transform: translate3d(calc(var(--px) * -14px), calc(var(--py) * 10px), 0);
+  opacity: 0.45;
+}
+
+.parallax-layer.layer-3{
+  background: radial-gradient(650px circle at 50% 80%, rgba(0,254,254,0.12), rgba(0,0,0,0) 60%);
+  transform: translate3d(calc(var(--px) * 10px), calc(var(--py) * -12px), 0);
+  opacity: 0.4;
+}
+
+.parallax-grid{
+  position: absolute;
+  inset: 0;
+  opacity: 0.12;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.35) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.35) 1px, transparent 1px);
+  background-size: 70px 70px;
+  transform: translate3d(calc(var(--px) * -6px), calc(var(--py) * -6px), 0);
+  filter: blur(0.2px);
+}
+
+@media (prefers-reduced-motion: reduce){
+  .parallax-bg{ display:none; }
+}
+

@@ -1,75 +1,99 @@
 import React from 'react';
 import './Content.css';
+import Typical from 'react-typical';
 import ParticleHeaderBg from '../ParticlesBg/ParticlesHeader/ParticleHeaderBg';
 
 /* ReactScroll */
 import { Link } from 'react-scroll';
 
-/* Multi idioma */
+/* Image */
+import meImg from '../../img/me.jpeg';
 
+/* CV */
+import cv from '../../cv/cv.pdf';
 
 const Content = () => (
     <div className="contenido">
-        <ParticleHeaderBg/>
+        <ParticleHeaderBg />
         <section className="inicio" id="inicio">
-        
-            <div className="titulo">
-            
-                <p data-aos="fade-up" data-aos-delay="600">
-                    Hello
-                </p>
-                <h1 data-aos="fade-up" data-aos-delay="800">
-                    I am Vanshika Zawar
-                </h1>
-                <p data-aos="fade-up" data-aos-delay="1000">
-                    Full-stack developer
-                </p>
 
-                <div className="redes-sociales">
-                    <a href="https://www.linkedin.com/in/vanshikazawar/" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="1200"><i className="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/vanshikazawar27" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="1400"><i className="fab fa-github"></i></a>
-                    {/* <a href="https://www.instagram.com/nahuelcarrizolc/" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="1600"><i className="fab fa-instagram"></i></a>
-                    <a href="https://api.whatsapp.com/send?phone=5493815360966" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="1800"><i className="fab fa-whatsapp"></i></a> */}
-                </div>
-                <div className="wrapper">
-                    <a className="button" href="https://www.linkedin.com/in/vanshikazawar/" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="1200">
-                        <div className="icon">
-                            <i className="fab fa-linkedin"></i>
-                        </div>
-                        <span>Linkedin</span>
-                    </a>
-                    <a className="button" href="https://github.com/vanshikazawar27" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="1400">
-                        <div className="icon">
+            <div className="hero-container">
+                {/* ── Left Column: Text ── */}
+                <div className="hero-text" data-aos="fade-right" data-aos-delay="400">
+                    <p className="hero-greeting">Hello, I'm</p>
+
+                    <h1 className="hero-name">
+                        Vanshika Zawar
+                    </h1>
+
+                    <h2 className="hero-role">
+                        And I'm a{' '}
+                        <span className="typed-role">
+                            <Typical
+                                steps={[
+                                    'Full-stack Developer', 2000,
+                                    'Web Designer', 2000,
+                                    'React Developer', 2000,
+                                    'Problem Solver', 2000,
+                                ]}
+                                loop={Infinity}
+                                wrapper="span"
+                            />
+                        </span>
+                    </h2>
+
+                    <p className="hero-description">
+                        I have been working on web designing and web development. Constantly updating
+                        the technologies I already learned, but also looking to learn new technologies
+                        to enrich my skills and improve my good practices as a developer.
+                    </p>
+
+                    {/* Social Icons */}
+                    <div className="hero-socials">
+                        <a href="https://www.linkedin.com/in/vanshikazawar/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i className="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/vanshikazawar27" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                             <i className="fab fa-github"></i>
-                        </div>
-                        <span>Github</span>
-                    </a>
-                    <a className="button" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="1200">
-                        <div className="icon">
+                        </a>
+                        <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank" rel="noopener noreferrer" aria-label="Email">
                             <i className="fas fa-envelope"></i>
-                        </div>
-                        <span>Gmail</span>
-                    </a>
-                    <a className="button" href="https://x.com/vanshikazawar" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="1600">
-                        <div className="icon">
+                        </a>
+                        <a href="https://x.com/vanshikazawar" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
                             <i className="fab fa-twitter"></i>
-                        </div>
-                        <span>Twitter</span>
-                    </a>
-                    {/* <a className="button" href="https://api.whatsapp.com/send?phone=5493815360966" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-delay="1800">
-                        <div className="icon">
-                            <i className="fab fa-whatsapp"></i>
-                        </div>
-                        <span>Whatsapp</span>
-                    </a> */}
+                        </a>
+                    </div>
+
+                    {/* CTA Buttons */}
+                    <div className="hero-buttons">
+                        <a href={cv} target="_blank" rel="noopener noreferrer" download="Vanshika_Zawar_CV.pdf" className="btn-hire">
+                            Download CV
+                        </a>
+                        <Link to="contactos" spy={true} offset={-150} href="#contactos" className="btn-contact">
+                            Contact Me
+                        </Link>
+                    </div>
                 </div>
 
-                <Link to="sobre-mi" href="#sobre-mi">
-                    <div className="scroll-down"></div>
-                </Link>
+                {/* ── Right Column: Profile Image ── */}
+                <div className="hero-image-wrapper" data-aos="fade-left" data-aos-delay="600">
+                    <div className="hero-image-ring">
+                        <div className="hero-image-inner">
+                            <img src={meImg} alt="Vanshika Zawar" className="hero-photo" />
+                        </div>
+                    </div>
+                </div>
             </div>
+
+
+
+            {/* Scroll down indicator */}
+            <Link to="sobre-mi" href="#sobre-mi">
+                <div className="scroll-down"></div>
+            </Link>
         </section>
     </div>
 );
 
 export default Content;
+

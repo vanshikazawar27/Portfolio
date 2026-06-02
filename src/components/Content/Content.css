@@ -1,137 +1,313 @@
-/********************** Inicio **********************/
+/********************** Hero / Inicio **********************/
 
 .contenido {
     background: #010101;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
     background-position: center center;
-	background-size: cover;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
 }
 
-.inicio{
+.inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 10rem;
+    padding-bottom: 4rem;
+}
+
+/* ── Hero Container (Two-Column) ── */
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    gap: 6rem;
+    z-index: 200;
+    flex: 1;
+}
+
+/* ── Left Column: Text ── */
+
+.hero-text {
+    flex: 1;
+    max-width: 580px;
+}
+
+.hero-greeting {
+    font-size: 2.2rem;
+    color: var(--white);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+.hero-name {
+    font-size: 5.5rem;
+    color: var(--white);
+    font-weight: 800;
+    line-height: 1.1;
+    margin: 0.5rem 0 1rem 0;
+    letter-spacing: -1px;
+}
+
+.hero-role {
+    font-size: 2.6rem;
+    color: var(--white);
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.hero-role .typed-role {
+    color: var(--green);
+    position: relative;
+}
+
+/* Blinking cursor after the typed text */
+.hero-role .typed-role span::after {
+    content: '|';
+    animation: blink-cursor 0.7s step-end infinite;
+    color: var(--green);
+    font-weight: 300;
+}
+
+@keyframes blink-cursor {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.hero-description {
+    font-size: 1.6rem;
+    color: #a0aec0;
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+    max-width: 500px;
+}
+
+/* ── Social Icons ── */
+
+.hero-socials {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.hero-socials a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 229, 254, 0.3);
+    color: var(--green);
+    font-size: 1.8rem;
+    transition: all 0.35s ease;
+    background: transparent;
+}
+
+.hero-socials a:hover {
+    background: var(--green);
+    color: #010101;
+    border-color: var(--green);
+    box-shadow: 0 0 20px rgba(0, 229, 254, 0.4);
+    transform: translateY(-3px);
+}
+
+/* ── CTA Buttons ── */
+
+.hero-buttons {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.btn-hire,
+.btn-contact {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem 3.5rem;
+    border-radius: 5rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.35s ease;
+    letter-spacing: 0.3px;
+    text-decoration: none;
+}
+
+.btn-hire {
+    background: var(--green);
+    color: #010101;
+    border: 2px solid var(--green);
+    box-shadow: 0 4px 15px rgba(0, 229, 254, 0.3);
+}
+
+.btn-hire:hover {
+    background: transparent;
+    color: var(--green);
+    box-shadow: 0 4px 25px rgba(0, 229, 254, 0.5);
+    transform: translateY(-2px);
+}
+
+.btn-contact {
+    background: transparent;
+    color: var(--white);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn-contact:hover {
+    border-color: var(--green);
+    color: var(--green);
+    box-shadow: 0 4px 25px rgba(0, 229, 254, 0.2);
+    transform: translateY(-2px);
+}
+
+/* ── Right Column: Profile Image ── */
+
+.hero-image-wrapper {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-image-ring {
+    position: relative;
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Decorative gradient ring */
+    background: conic-gradient(
+        from 0deg,
+        transparent 0deg 60deg,
+        var(--green) 60deg 150deg,
+        transparent 150deg 210deg,
+        rgba(0, 229, 254, 0.3) 210deg 300deg,
+        transparent 300deg 360deg
+    );
+    padding: 5px;
+    animation: ring-rotate 8s linear infinite;
+}
+
+@keyframes ring-rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.hero-image-inner {
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #010101;
+    padding: 4px;
+    /* Counter-rotate so the image stays upright */
+    animation: ring-counter-rotate 8s linear infinite;
+}
+
+@keyframes ring-counter-rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(-360deg); }
+}
+
+.hero-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 50%;
+    display: block;
+}
+
+/* Glow effect behind the ring */
+.hero-image-ring::before {
+    content: '';
+    position: absolute;
+    inset: -15px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0, 229, 254, 0.15), transparent 70%);
+    z-index: -1;
+    filter: blur(20px);
+}
+
+/* ── Stats Bar ── */
+
+.hero-stats {
     display: flex;
     justify-content: center;
-    
+    gap: 5rem;
+    width: 90%;
+    max-width: 1000px;
+    margin-top: 4rem;
+    padding: 3rem 4rem;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 2rem;
+    z-index: 200;
 }
 
-.inicio .titulo{
-    margin: 20rem auto 0 auto;
+.stat-item {
     text-align: center;
-    z-index: 200!important;
 }
 
-.inicio .titulo p {
-    font-size: 3.5rem;
-    color: var(--white);
-    position: relative;
-    font-weight: 600;
-}
-
-.inicio .titulo h1{
-    font-size: 4.5rem;
+.stat-item h3 {
+    font-size: 4rem;
+    font-weight: 800;
     color: var(--green);
+    line-height: 1;
+    margin-bottom: 0.5rem;
 }
 
-.wrapper {
-    margin: 2rem;
-}
-.wrapper .button{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    height: 60px;
-    width: 60px;
-    float: left;
-    margin: 0 2rem;
-    overflow: hidden;
-    color: #000;
-    background: var(--green);
-    border-radius: 50px;
-    cursor: pointer;
-    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
-}
-.wrapper .button:hover{
-    width: 170px;
-}
-.wrapper .button .icon{
-    display: inline-block;
-    padding: 0 1.8rem;
-    height: 60px;
-    width: 60px;
-    border-radius: 50px;
-    box-sizing: border-box;
-    line-height: 60px;
-    transition: all 1.5s ease-out!important;
+.stat-item p {
+    font-size: 1.3rem;
+    color: #a0aec0;
+    line-height: 1.4;
+    text-transform: none;
 }
 
-.wrapper .button:nth-child(1):hover .icon{
-    background: #4267B2;
-}
-.wrapper .button:nth-child(2):hover .icon{
-    background: #333;
-}
-.wrapper .button:nth-child(3):hover .icon{
-    background: #E1306C;
-}
-.wrapper .button:nth-child(4):hover .icon{
-    background: #4fc35b;
-}
-.wrapper .button .icon i{
-    font-size: 25px;
-    line-height: 60px;
-    transition: all 0.3s ease-out;
-}
-.wrapper .button:hover .icon i{
-    color: #fff;
-}
-.wrapper .button span{
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 60px;
-    margin-left: 10px;
-    transition: all 0.3s ease-out;
-    color: #fff;
-}
-.wrapper .button:nth-child(1):hover{
-    background-color: #4267B2;
-}
-.wrapper .button:nth-child(2):hover{
-    background-color: #333;
-}
-.wrapper .button:nth-child(3):hover{
-    background-color: #E1306C;
-}
-.wrapper .button:nth-child(4):hover{
-    background-color: #4fc35b;
-}
-
-.titulo .redes-sociales{
-    display: none;
-}
+/* ── Scroll Down Indicator ── */
 
 .scroll-down {
     height: 50px;
     width: 30px;
-    border: 2px solid #fff;
+    border: 2px solid rgba(255, 255, 255, 0.4);
     position: absolute;
-    left: 49%;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: 20px;
     border-radius: 50px;
     cursor: pointer;
 }
+
 .scroll-down::before,
 .scroll-down::after {
     content: "";
     position: absolute;
     top: 20%;
+    left: 50%;
     height: 10px;
     width: 10px;
     transform: translate(-50%, -100%) rotate(45deg);
-    border: 2px solid #fff;
+    border: 2px solid rgba(255, 255, 255, 0.6);
     border-top: transparent;
     border-left: transparent;
     animation: scroll-down 1s ease-in-out infinite;
 }
+
 .scroll-down::before {
     top: 30%;
     animation-delay: 0.3s;
@@ -139,7 +315,6 @@
 
 @keyframes scroll-down {
     0% {
-    /* top:20%; */
         opacity: 0;
     }
     30% {
@@ -149,24 +324,102 @@
         opacity: 1;
     }
     100% {
-    top: 90%;
+        top: 90%;
         opacity: 0;
     }
 }
 
 
-/********************** Media Q **********************/
+/********************** Light Mode Overrides **********************/
+
+body.light .hero-name {
+    color: var(--black);
+}
+
+body.light .hero-greeting {
+    color: var(--black);
+}
+
+body.light .hero-role {
+    color: var(--black);
+}
+
+body.light .hero-description {
+    color: #5a6a78;
+}
+
+body.light .hero-socials a {
+    border-color: rgba(18, 31, 65, 0.2);
+    color: var(--black);
+}
+
+body.light .hero-socials a:hover {
+    background: var(--green);
+    color: var(--black);
+    border-color: var(--green);
+}
+
+body.light .btn-contact {
+    color: var(--black);
+    border-color: rgba(18, 31, 65, 0.3);
+}
+
+body.light .btn-contact:hover {
+    border-color: var(--green);
+    color: var(--black);
+}
+
+body.light .stat-item p {
+    color: #5a6a78;
+}
+
+body.light .hero-stats {
+    background: rgba(0, 0, 0, 0.03);
+    border-color: rgba(0, 0, 0, 0.08);
+}
+
+body.light .scroll-down {
+    border-color: rgba(0, 0, 0, 0.25);
+}
+
+body.light .scroll-down::before,
+body.light .scroll-down::after {
+    border-color: transparent rgba(0, 0, 0, 0.4) rgba(0, 0, 0, 0.4) transparent;
+}
+
+
+/********************** Responsive **********************/
 
 @media (max-width: 990px) {
-    .wrapper .button .icon{
-        display: inline-block;
-        padding: 0 1.8rem 0 2.1rem;
-        height: 60px;
-        width: 60px;
-        border-radius: 50px;
-        box-sizing: border-box;
-        line-height: 60px;
-        transition: all 0.3s ease-out;
+    .hero-container {
+        gap: 4rem;
+    }
+
+    .hero-name {
+        font-size: 4.5rem;
+    }
+
+    .hero-role {
+        font-size: 2.2rem;
+    }
+
+    .hero-image-ring {
+        width: 300px;
+        height: 300px;
+    }
+
+    .hero-image-inner {
+        width: 282px;
+        height: 282px;
+    }
+
+    .hero-stats {
+        gap: 3rem;
+        padding: 2.5rem 3rem;
+    }
+
+    .stat-item h3 {
+        font-size: 3.2rem;
     }
 
     .scroll-down {
@@ -176,47 +429,124 @@
 }
 
 @media (max-width: 760px) {
-
     .contenido {
-        min-height: 600px;
+        min-height: auto;
     }
 
-    .inicio .titulo p {
-        font-size: 3.5rem;
+    .inicio {
+        padding-top: 12rem;
+        padding-bottom: 6rem;
     }
-    
-    .inicio .titulo h1{
+
+    .hero-container {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 3rem;
+    }
+
+    .hero-text {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-description {
+        max-width: 450px;
+    }
+
+    .hero-socials {
+        justify-content: center;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-image-ring {
+        width: 260px;
+        height: 260px;
+    }
+
+    .hero-image-inner {
+        width: 244px;
+        height: 244px;
+    }
+
+    .hero-name {
         font-size: 4rem;
     }
-}
 
-@media (max-width: 570px) {
-    .wrapper{
-        display: none;
+    .hero-role {
+        font-size: 2rem;
     }
 
-    .titulo .redes-sociales{
-        display: block;
+    .hero-stats {
+        gap: 2rem;
+        padding: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .stat-item h3 {
+        font-size: 2.8rem;
     }
 }
 
 @media (max-width: 450px) {
-    .contenido {
-        min-height: 500px;
+    .inicio {
+        padding-top: 10rem;
     }
 
-    .inicio .titulo p {
-        font-size: 3rem;
+    .hero-greeting {
+        font-size: 1.8rem;
     }
-    
-    .inicio .titulo h1{
+
+    .hero-name {
         font-size: 3.5rem;
     }
-    .scroll-down {
-        display: none;
+
+    .hero-role {
+        font-size: 1.7rem;
     }
 
-    .icons a{
-        margin: 5rem 2rem;
+    .hero-description {
+        font-size: 1.4rem;
+    }
+
+    .hero-image-ring {
+        width: 220px;
+        height: 220px;
+    }
+
+    .hero-image-inner {
+        width: 206px;
+        height: 206px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn-hire,
+    .btn-contact {
+        width: 100%;
+    }
+
+    .hero-stats {
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    .stat-item h3 {
+        font-size: 2.4rem;
+    }
+
+    .stat-item p {
+        font-size: 1.1rem;
+    }
+
+    .scroll-down {
+        display: none;
     }
 }
