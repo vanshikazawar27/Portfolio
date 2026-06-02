@@ -44,15 +44,15 @@ const Project = () => {
 
                 <section className="projects__grid paginas-web">
                     <div className="projects__item">
-                        <a onClick={() => cambiarEstadoModal18(!estadoModal18)}>
+                        <button type="button" onClick={() => cambiarEstadoModal18(!estadoModal18)}>
                             <img src={proyectsImg(`./quickcart.png`)} alt="QuickCart" className="projects__img" />
-                        </a>
+                        </button>
                     </div>
 
                     <div className="projects__item">
-                        <a onClick={() => cambiarEstadoModal19(!estadoModal19)}>
+                        <button type="button" onClick={() => cambiarEstadoModal19(!estadoModal19)}>
                             <img src={proyectsImg(`./wandergo.png`)} alt="Wandergo-AI" className="projects__img" />
-                        </a>
+                        </button>
                     </div>
                 </section>
 

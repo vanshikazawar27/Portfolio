@@ -1,52 +1,48 @@
-import React, { useEffect } from 'react';
-import './DarkMode.css'
+import React, { useEffect, useState } from "react";
+import "./DarkMode.css";
 
 const DarkMode = () => {
-    let clickedClass = "clicked";
+    const clickedClass = "clicked";
     const lightTheme = "light";
     const darkTheme = "dark";
-    let theme = "light";
+
+    const [theme, setTheme] = useState(lightTheme);
 
     useEffect(() => {
-        const body = document.body;
+        const savedTheme = localStorage.getItem("theme");
+        const initialTheme =
+            savedTheme === darkTheme ? darkTheme : lightTheme;
 
-        const savedTheme = localStorage?.getItem("theme");
-        const initialTheme = savedTheme === "dark" ? darkTheme : lightTheme;
-        theme = initialTheme;
+        setTheme(initialTheme);
 
-        body.classList.toggle(darkTheme, initialTheme === darkTheme);
-        body.classList.toggle(lightTheme, initialTheme === lightTheme);
-
-        const btn = document.getElementById("darkMode");
-        if (btn) {
-            btn.classList.toggle(clickedClass, initialTheme === darkTheme);
-        }
+        document.body.classList.remove(lightTheme, darkTheme);
+        document.body.classList.add(initialTheme);
     }, []);
 
-    const switchTheme = (e) => {
-        const body = document.body;
+    const switchTheme = () => {
+        const newTheme =
+            theme === darkTheme ? lightTheme : darkTheme;
 
-        if (theme === darkTheme) {
-            body.classList.replace(darkTheme, lightTheme);
-            e.target.classList.remove(clickedClass);
-            localStorage.setItem("theme", "light");
-            theme = lightTheme;
-        } else {
-            body.classList.replace(lightTheme, darkTheme);
-            e.target.classList.add(clickedClass);
-            localStorage.setItem("theme", "dark");
-            theme = darkTheme;
-        }
+        document.body.classList.remove(lightTheme, darkTheme);
+        document.body.classList.add(newTheme);
+
+        localStorage.setItem("theme", newTheme);
+        setTheme(newTheme);
     };
+
     return (
         <div>
             <div
-                    className={theme === "dark" ? clickedClass : ""}
-                    id="darkMode"
-                    onClick={(e) => switchTheme(e)}
-                >
-                <span><i className="fas fa-sun"></i></span>
-                <span><i className="fas fa-moon"></i></span>
+                id="darkMode"
+                className={theme === darkTheme ? clickedClass : ""}
+                onClick={switchTheme}
+            >
+                <span>
+                    <i className="fas fa-sun"></i>
+                </span>
+                <span>
+                    <i className="fas fa-moon"></i>
+                </span>
             </div>
         </div>
     );
