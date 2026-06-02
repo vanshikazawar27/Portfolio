@@ -1,6 +1,6 @@
-body.dark {
-  background: rgb(14, 12, 12);
-}
+/* Background is controlled by `src/App.css` via --page-bg */
+
+
 
 body.dark section .heading {
   color: var(--white);
@@ -20,11 +20,11 @@ body.dark .btn-codigo:hover {
 /********************** header **********************/
 
 body.dark .site-header {
-  background: #111111;
+  background: #152636;
 }
 
 body.dark .navbar.activar {
-  background-color: #111;
+  background-color: #152636;
 }
 
 body.dark .logo span {
@@ -43,7 +43,7 @@ body.dark .navbar .active-link::before {
 /********************** Sobre Mi **********************/
 
 body.dark section .row .columns {
-  background: rgb(14, 12, 12);
+  background: #152636;
   color: var(--light-color);
 }
 
@@ -72,8 +72,8 @@ body.dark main section .row .columns .skill img:hover {
 /********************** Servicios **********************/
 
 body.dark .servicios .row .columns {
-  background: #111;
-  border-bottom: 1rem solid #111;
+  background: #152636;
+  border-bottom: 1rem solid #152636;
   color: var(--light-color);
 }
 
@@ -141,9 +141,9 @@ body.dark .cm-up .cm-icon {
 /********************** Footer **********************/
 
 body.dark .footer {
-  background: #111;
+  background: #152636;
   margin: 0;
-  border-top: 3px solid #111;
+  border-top: 3px solid #152636;
 }
 
 body.dark .footer .site-footer .copyright {
@@ -180,7 +180,7 @@ body.dark .skill-info {
 /********************** Services seccion **********************/
 
 body.dark .site-services .row .columns {
-  background: #111111;
+  background: #152636;
 }
 
 body.dark .site-services .columns .numero {
@@ -201,7 +201,7 @@ body.dark .preguntas .accordion-container .accordion .accordion-heading i {
 body.dark .preguntas .accordion-container .accordion,
 body.dark .preguntas .accordion-container .accordion.active .accordion-heading,
 body.dark .preguntas .accordion-container .accordion .accordion-heading {
-  background: #111111;
+  background: #152636;
 }
 
 body.dark
@@ -230,7 +230,7 @@ body.dark
 /********************** Modal **********************/
 
 body.dark .contenedor-modal {
-  background: #111111;
+  background: #152636;
   color: var(--light-color);
 }
 
@@ -247,7 +247,31 @@ body.dark .boton-cerrar {
 
 @media (max-width: 570px) {
   body.dark .skill h5 {
-    background-color: rgb(14, 12, 12);
+    background-color: #152636;
     color: #fff;
   }
+}
+
+/********************** Hero Buttons Dark Mode **********************/
+
+body.dark .btn-hire {
+    background: #FF2A5F;
+    color: #fff;
+    border-color: #FF2A5F;
+    box-shadow: 0 4px 15px rgba(255, 42, 95, 0.3);
+}
+
+body.dark .btn-hire:hover {
+    background: transparent;
+    color: #FF2A5F;
+    box-shadow: 0 4px 25px rgba(255, 42, 95, 0.5);
+}
+
+body.dark .btn-contact {
+    color: var(--white);
+}
+
+body.dark .btn-contact:hover {
+    border-color: var(--green);
+    color: var(--green);
 }

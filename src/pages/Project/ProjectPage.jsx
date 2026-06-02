@@ -14,10 +14,14 @@ import ParticleBackground from "../../components/ParticlesBg/ParticleBackground"
 import ScrollToTop from '../../components/ScrollToTop/ScrollToTop';
 
 /* Img */
-const proyectsImg = require.context('../../img', true);
+const proyectsImg = require.context('../../img', false);
+
+// Ensure webpack includes both images used by this page
+proyectsImg.keys().forEach(() => {});
 
 const Project = () => {
     const [estadoModal18, cambiarEstadoModal18] = useState(false);
+    const [estadoModal19, cambiarEstadoModal19] = useState(false);
 
     return (
         <div>
@@ -44,7 +48,14 @@ const Project = () => {
                             <img src={proyectsImg(`./quickcart.png`)} alt="QuickCart" className="projects__img" />
                         </a>
                     </div>
+
+                    <div className="projects__item">
+                        <a onClick={() => cambiarEstadoModal19(!estadoModal19)}>
+                            <img src={proyectsImg(`./wandergo.png`)} alt="Wandergo-AI" className="projects__img" />
+                        </a>
+                    </div>
                 </section>
+
             </main>
 
             <Modal
@@ -78,6 +89,94 @@ const Project = () => {
                     </div>
                 </div>
             </Modal>
+
+            <Modal
+    estado={estadoModal19}
+    cambiarEstado={cambiarEstadoModal19}
+>
+    <div className="content-modal">
+        <div className="pw-content">
+            <div className="eins-modal-preview">
+                <img
+                    src={proyectsImg(`./wandergo.png`)}
+                    alt="Wandergo-AI"
+                />
+            </div>
+
+            <div className="eins-modal-text">
+                <p>
+                    Wandergo-AI – AI Travel Planner
+                </p>
+
+                <p>
+                    An AI-powered travel planning platform that generates
+                    personalized itineraries based on destination, budget,
+                    trip duration, and user preferences. The application
+                    features AI-generated travel recommendations, interactive
+                    maps, secure authentication, PDF itinerary export, trip
+                    saving, and shareable travel plans.
+                </p>
+
+                <div className="eins-modal-text-2">
+                    <span>Repo:</span>{" "}
+                    <a
+                        href="https://github.com/vanshikazawar27/Wandergo-ai"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        GitHub Repository
+                    </a>
+                    <br />
+
+                    <span>Demo:</span>{" "}
+                    <a
+                        href="https://wandergo-ai.vercel.app/"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        Live Demo
+                    </a>
+                </div>
+
+                <div className="eins-modal-text-3">
+                    <span>Tech Stack:</span>
+
+                    <div className="eins-modal-tec">
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                            alt="React"
+                        />
+
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+                            alt="Node.js"
+                        />
+
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
+                            alt="Express.js"
+                        />
+
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg"
+                            alt="MongoDB"
+                        />
+
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original-wordmark.svg"
+                            alt="Tailwind CSS"
+                        />
+                    </div>
+
+                    <p className="tech-summary">
+                        React • Node.js • Express.js • MongoDB • Tailwind CSS • JWT Authentication • OpenRouter AI • Google Maps API
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</Modal>
+
 
 
 

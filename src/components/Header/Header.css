@@ -46,6 +46,12 @@
   margin-right: 1rem;
 }
 
+.dark-mode-container {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 1rem;
+}
+
 .navbar img {
   width: 30px;
   cursor: pointer;

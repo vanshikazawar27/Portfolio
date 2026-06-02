@@ -1,7 +1,7 @@
 import React from 'react';
 import './Content.css';
 import Typical from 'react-typical';
-import ParticleHeaderBg from '../ParticlesBg/ParticlesHeader/ParticleHeaderBg';
+// import ParticleHeaderBg from '../ParticlesBg/ParticlesHeader/ParticleHeaderBg';
 
 /* ReactScroll */
 import { Link } from 'react-scroll';
@@ -14,7 +14,7 @@ import cv from '../../cv/cv.pdf';
 
 const Content = () => (
     <div className="contenido">
-        <ParticleHeaderBg />
+        {/* <ParticleHeaderBg /> */}
         <section className="inicio" id="inicio">
 
             <div className="hero-container">

@@ -1,12 +1,9 @@
 # TODO
 
-## Task: Remove the “stats bar” (5+/10+/... bar) from the home page
-
-- [x] Identify where the stats bar is rendered on the home page.
-- [x] Remove the stats bar markup from the home hero section.
-
-- [ ] Remove/cleanup related CSS (optional if CSS-only). 
-- [x] Build/test the app to ensure no layout/runtime errors.
-
+- [x] Inspect where “dark theme backgroudh” is currently set (likely App.css/body.dark or specific component backgrounds).
+- [x] Identify background element(s) affected by theme (base page background).
+- [x] Update CSS so the dark theme background color changes consistently based on `body.dark`.
+- [x] Ensure the update does not break light theme.
+- [ ] Quick test: toggle dark mode and verify background changes.
 
 

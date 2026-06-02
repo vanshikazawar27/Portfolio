@@ -208,6 +208,12 @@
   margin: 5rem 2rem 0 0;
 }
 
+body.dark .contenedor-modal {
+  background: #111111;
+  color: var(--light-color);
+}
+
+
 
 .boton-cerrar {
   position: absolute;
@@ -222,6 +228,11 @@
   border-radius: 5px;
   color: var(--black);
 }
+
+body.dark .boton-cerrar {
+  color: var(--white);
+}
+
 
 .boton-cerrar svg {
   width: 100%;
@@ -284,6 +295,12 @@
   font-weight: bold;
   color: var(--black);
 }
+
+body.dark .eins-modal-text-2,
+body.dark .eins-modal-text-3 {
+  color: var(--white);
+}
+
 
 /********************** Media Q **********************/
 

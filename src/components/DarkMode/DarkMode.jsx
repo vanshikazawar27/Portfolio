@@ -1,39 +1,46 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './DarkMode.css'
 
 const DarkMode = () => {
     let clickedClass = "clicked";
-    const body = document.body;
     const lightTheme = "light";
     const darkTheme = "dark";
-    let theme;
+    let theme = "light";
 
-    if (localStorage) {
-        theme = localStorage.getItem("theme");
-    }
+    useEffect(() => {
+        const body = document.body;
 
-    if (theme === lightTheme || theme === darkTheme) {
-        body.classList.add(theme);
-    } else {
-        body.classList.add(darkTheme);
-    }
+        const savedTheme = localStorage?.getItem("theme");
+        const initialTheme = savedTheme === "dark" ? darkTheme : lightTheme;
+        theme = initialTheme;
+
+        body.classList.toggle(darkTheme, initialTheme === darkTheme);
+        body.classList.toggle(lightTheme, initialTheme === lightTheme);
+
+        const btn = document.getElementById("darkMode");
+        if (btn) {
+            btn.classList.toggle(clickedClass, initialTheme === darkTheme);
+        }
+    }, []);
 
     const switchTheme = (e) => {
+        const body = document.body;
+
         if (theme === darkTheme) {
-        body.classList.replace(darkTheme, lightTheme);
-        e.target.classList.remove(clickedClass);
-        localStorage.setItem("theme", "light");
-        theme = lightTheme;
+            body.classList.replace(darkTheme, lightTheme);
+            e.target.classList.remove(clickedClass);
+            localStorage.setItem("theme", "light");
+            theme = lightTheme;
         } else {
-        body.classList.replace(lightTheme, darkTheme);
-        e.target.classList.add(clickedClass);
-        localStorage.setItem("theme", "dark");
-        theme = darkTheme;
+            body.classList.replace(lightTheme, darkTheme);
+            e.target.classList.add(clickedClass);
+            localStorage.setItem("theme", "dark");
+            theme = darkTheme;
         }
     };
     return (
         <div>
-            <div    
+            <div
                     className={theme === "dark" ? clickedClass : ""}
                     id="darkMode"
                     onClick={(e) => switchTheme(e)}

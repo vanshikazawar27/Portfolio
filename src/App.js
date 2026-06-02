@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import {
     Route,
     Routes,
@@ -17,41 +17,18 @@ import RouterScrollTop from "./components/ScrollToTop/RouterScrollTop"
 
 
 function App() {
-    const [loading, setLoading] = useState(false);
-
-    useEffect(() => {
-        setLoading(true)
-        setTimeout(() => {
-            setLoading(false)
-        }, 4000)
-    }, [])
     return (
-        <>
+        <div style={{ background: 'var(--page-bg)', minHeight: '100vh' }}>
             <RouterScrollTop />
-            {
-                loading ?
-
-                    <div className='loading-pag'>
-                        <div className="loader">
-                            <span>=(Vanshika)=</span>
-                            <span>=(Vanshika)=</span>
-                        </div>
-                    </div>
-
-                    :
-
-                    <Routes>
-                        <Route path="/" element={<Home />}></Route>
-                        <Route exact path="/about" element={<About />}></Route>
-                        <Route exact path="/service" element={<Services />}></Route>
-                        <Route exact path="/project" element={<Project />}></Route>
-                        <Route exact path="/project/app" element={<ProjectApp />} />
-                        {/* <Route exact path="/project/game" element={<ProjectGame />} /> */}
-                    </Routes>
-
-            }
-
-        </>
+            <Routes>
+                <Route path="/" element={<Home />}></Route>
+                <Route exact path="/about" element={<About />}></Route>
+                <Route exact path="/service" element={<Services />}></Route>
+                <Route exact path="/project" element={<Project />}></Route>
+                <Route exact path="/project/app" element={<ProjectApp />} />
+                {/* <Route exact path="/project/game" element={<ProjectGame />} /> */}
+            </Routes>
+        </div>
     )
 }
 

@@ -4,8 +4,7 @@ import './Header.css';
 /* React router */
 import { NavLink } from 'react-router-dom';
 
-/* DarkMode */
-import DarkMode from '../DarkMode/DarkMode';
+
 
 /* Language */
 
@@ -54,9 +53,7 @@ const HeaderPage = () => {
                     <img onClick={() => idioma.selectLanguage('es-ES')} src="https://nahuel61920.github.io/Portafoliovirtual/img/es.png" alt="España" />
                 </div> */}
             </nav>
-            <div className="switch" id="switch">
-                <DarkMode />
-            </div>
+
         </header>
     )
 }
