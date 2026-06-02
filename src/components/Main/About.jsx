@@ -35,21 +35,13 @@ const About = () => (
                     As I continue my journey in computer science, I aim to contribute to impactful projects and grow into a developer who not only builds solutions but also understands the people who use them.
                 </p>
 
-                {/* <ul>
-                    <li>
-                        <p>
-                            <span>
-                                From:
-                            </span>
-                            India
-                        </p>
-                    </li>
-                </ul> */}
+                
 
                 <div className="mas-info">
-                    <a href={cv} target="_blank" rel="noopener noreferrer" download="cv.pdf" className="btn-codigo buttonDownload">
-                        Download CV
-                    </a>
+                    
+                    <a href={cv} target="_blank" rel="noopener noreferrer" download="cv.pdf" className="btn-codigo  buttonDownload">
+                         Download CV
+                     </a>
                 </div>
             </div>
 
