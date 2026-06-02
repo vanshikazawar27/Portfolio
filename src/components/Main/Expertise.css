@@ -1,14 +1,32 @@
-/* ===== Expertise Block - no outer box, transparent like rest of site ===== */
+/* ===== Expertise Section ===== */
 
 .exp-block {
     background: transparent;
     border: none;
     box-shadow: none;
     padding: 0;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 }
 
-/* ===== Inner Skill Card Grid ===== */
+/* ===== Category Title ===== */
+
+.category-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--green);
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+    border-left: .4rem solid var(--green);
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+
+body.light .category-title {
+    color: var(--black);
+    border-left-color: var(--green);
+}
+
+/* ===== Skill Grid ===== */
 
 .exp-card-grid {
     display: grid;
@@ -16,15 +34,19 @@
     gap: 2rem;
 }
 
+/* ===== Skill Card ===== */
+
 .exp-skill-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 0.8rem;
+
     background: rgba(255, 255, 255, 0.04);
     border: .1rem solid rgba(255, 255, 255, 0.08);
-    border-radius: .5rem;
+    border-radius: .8rem;
+
     padding: 2rem 1.2rem;
     transition: all .3s ease;
 }
@@ -36,15 +58,8 @@
     box-shadow: 0 1rem 2rem rgba(0, 229, 254, 0.2);
 }
 
-.exp-skill-card:hover .exp-card-name {
-    color: var(--black);
-}
+/* ===== Light Mode ===== */
 
-.exp-skill-card:hover .exp-card-info {
-    color: var(--black);
-}
-
-/* Light mode overrides */
 body.light .exp-skill-card {
     background: #fff;
     border: var(--borde);
@@ -63,6 +78,21 @@ body.light .exp-skill-card:hover {
     width: 6rem;
     height: 6rem;
     object-fit: contain;
+    transition: transform .3s ease;
+}
+
+/* GitHub icon visibility fix for dark theme */
+img[alt="GitHub"] {
+    filter: invert(1);
+}
+
+/* Restore GitHub icon in light theme */
+body.light img[alt="GitHub"] {
+    filter: none;
+}
+
+.exp-skill-card:hover .exp-card-img {
+    transform: scale(1.1);
 }
 
 .exp-card-name {
@@ -94,15 +124,48 @@ body.light .exp-card-name {
     color: var(--black);
 }
 
-/* ===== Responsive ===== */
+/* ===== Tablet ===== */
 
 @media (max-width: 1100px) {
     .exp-card-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .category-title {
+        font-size: 2rem;
+    }
 }
 
+/* ===== Mobile ===== */
+
 @media (max-width: 600px) {
+    .exp-card-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .exp-skill-card {
+        padding: 1.5rem 1rem;
+    }
+
+    .exp-card-img {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .exp-card-name {
+        font-size: 1.4rem;
+    }
+
+    .category-title {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* ===== Small Phones ===== */
+
+@media (max-width: 450px) {
     .exp-card-grid {
         grid-template-columns: 1fr;
     }
