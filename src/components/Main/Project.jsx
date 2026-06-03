@@ -75,7 +75,7 @@ const Project = () => {
 
             <a
                 href="https://quickcart-tau-ten.vercel.app/"
-                className="custom-btn btn"
+                className="custom-btn btn-codigo"
                 target="_blank"
                 rel="noopener noreferrer"
             >
@@ -89,6 +89,14 @@ const Project = () => {
                 rel="noopener noreferrer"
             >
                 Repository
+            </a>
+            <a
+                href="https://www.youtube.com/watch?v=-BSN9hWajEY"
+                className="custom-btn btn-codigo"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Video
             </a>
         </div>
     </SwiperSlide>
@@ -121,7 +129,7 @@ const Project = () => {
 
             <a
                 href="https://wandergo-ai.vercel.app/"
-                className="custom-btn btn"
+                className="custom-btn btn-codigo"
                 target="_blank"
                 rel="noopener noreferrer"
             >
@@ -135,6 +143,14 @@ const Project = () => {
                 rel="noopener noreferrer"
             >
                 Repository
+            </a>
+            <a
+                href="https://www.youtube.com/watch?v=-BSN9hWajEY"
+                className="custom-btn btn-codigo"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Video
             </a>
         </div>
     </SwiperSlide>

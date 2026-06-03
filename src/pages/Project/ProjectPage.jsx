@@ -74,7 +74,15 @@ const Project = () => {
                             </p>
                             <div className="eins-modal-text-2">
                                 <span>Repo:</span> <a href="https://github.com/vanshikazawar27/QuickCart" target="_blank" rel="noreferrer">https://github.com/vanshikazawar27/QuickCart</a><br/>
-                                <span>Demo:</span> <a href="https://quickcart-tau-ten.vercel.app/" target="_blank" rel="noreferrer">https://quickcart-tau-ten.vercel.app/</a>
+                                <span>Live:</span> <a href="https://quickcart-tau-ten.vercel.app/" target="_blank" rel="noreferrer">https://quickcart-tau-ten.vercel.app/</a>
+                                <span>Demo:</span>{" "}
+                    <a
+                        href="https://www.youtube.com/watch?v=-BSN9hWajEY"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        Demo
+                    </a>
                             </div>
                             <div className="eins-modal-text-3">
                                 <span>Used technology:</span>
@@ -128,13 +136,22 @@ const Project = () => {
                     </a>
                     <br />
 
-                    <span>Demo:</span>{" "}
+                    <span>Live:</span>{" "}
                     <a
                         href="https://wandergo-ai.vercel.app/"
                         target="_blank"
                         rel="noreferrer"
                     >
-                        Live Demo
+                        Live 
+                    </a>
+
+                    <span>Demo:</span>{" "}
+                    <a
+                        href="https://youtu.be/Eoz4yrEq2G8"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        Demo
                     </a>
                 </div>
 
