@@ -18,22 +18,18 @@ const About = () => (
                 <h3>
                     who I am
                 </h3>
-                <h4>
-                    My name is Vanshika Zawar and I am a full stack developer.
-                </h4>
+                <p>
+                    My name is Vanshika Zawar, and I am a 3rd year B.Tech Computer Science Engineering student and a Full Stack Developer. I have a strong interest in software development and a deep curiosity for how technology can solve real-world problems.                </p>
 
                 <p>
-                    I’m a Computer Science student with a strong curiosity for how technology shapes the world around us. I enjoy breaking down complex problems and turning ideas into practical, efficient solutions through code.
-                </p>
+                    I enjoy building web applications that combine creativity with functionality, and I am passionate about turning ideas into efficient, scalable, and user-friendly solutions. My work mainly focuses on full stack development using technologies like React, Node.js, Express, and MongoDB.                </p>
                 <p>
-                    I’m particularly interested in building projects that combine creativity with functionality—whether that’s developing web applications, exploring algorithms, or experimenting with new technologies. I’m always looking for opportunities to learn, improve, and collaborate with others who share a passion for innovation.
-                </p>
+                    I am continuously learning and exploring new technologies, with a particular interest in AI integration, system design, and problem-solving. I believe in writing clean, maintainable code and improving through consistent practice and real project experience.                </p>
                 <p>
-                    Beyond technical skills, I value consistency, problem-solving, and continuous growth. I believe in writing clean, maintainable code and approaching every project with attention to detail and a willingness to iterate.
-                </p>
-                <p>
+                    My goal is to grow as a developer who not only builds impactful applications but also understands user needs and delivers meaningful digital experiences.                </p>
+                {/* <p>
                     As I continue my journey in computer science, I aim to contribute to impactful projects and grow into a developer who not only builds solutions but also understands the people who use them.
-                </p>
+                </p> */}
 
                 
 
