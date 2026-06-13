@@ -146,7 +146,7 @@ const Project = () => {
                 Repository
             </a>
             <a
-                href="https://www.youtube.com/watch?v=-BSN9hWajEY"
+                href="https://www.youtube.com/watch?v=Eoz4yrEq2G8"
                 className="custom-btn btn-codigo"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -202,7 +202,7 @@ const Project = () => {
                 Repository
             </a>
             <a
-                href="https://www.youtube.com/watch?v=-BSN9hWajEY"
+                href="https://www.youtube.com/watch?v=KFe6IazGmoc"
                 className="custom-btn btn-codigo"
                 target="_blank"
                 rel="noopener noreferrer"

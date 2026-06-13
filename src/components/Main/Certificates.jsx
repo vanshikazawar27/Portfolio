@@ -45,6 +45,16 @@ const certificates = [
         image: "microsoftoffice.png"
     },
     {
+        id: 5,
+        title: "TechHack 2025 State Level Hackathon",
+        category: "PROGRAMMING",
+        //watermark: "AI",
+        //issuer: "Forage",
+        date: "2025",
+        color: "var(--green)",
+        image: "TechHack.jpeg"
+    },
+    {
         id: 3,
         title: "Gen-AI Engineering Mastermind",
         category: "PROGRAMMING",
@@ -63,16 +73,6 @@ const certificates = [
         date: "2026",
         color: "var(--green)",
         image: "Forage.jpg"
-    },
-    {
-        id: 5,
-        title: "TechHack 2025 State Level Hackathon",
-        category: "PROGRAMMING",
-        //watermark: "AI",
-        //issuer: "Forage",
-        date: "2026",
-        color: "var(--green)",
-        image: "TechHack.jpeg"
     }
 ];
 
