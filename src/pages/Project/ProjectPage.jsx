@@ -22,6 +22,7 @@ proyectsImg.keys().forEach(() => {});
 const Project = () => {
     const [estadoModal18, cambiarEstadoModal18] = useState(false);
     const [estadoModal19, cambiarEstadoModal19] = useState(false);
+    const [estadoModal20, cambiarEstadoModal20] = useState(false);
 
     return (
         <div>
@@ -54,6 +55,13 @@ const Project = () => {
                             <img src={proyectsImg(`./wandergo.png`)} alt="Wandergo-AI" className="projects__img" />
                         </button>
                     </div>
+
+                    <div className="projects__item">
+                        <button type="button" onClick={() => cambiarEstadoModal20(!estadoModal20)}>
+                            <img src={proyectsImg(`./fitflow.png`)} alt="FitFlow" className="projects__img" />
+                        </button>
+                    </div>
+
                 </section>
 
             </main>
@@ -194,6 +202,97 @@ const Project = () => {
     </div>
 </Modal>
 
+
+<Modal
+    estado={estadoModal20}
+    cambiarEstado={cambiarEstadoModal20}
+>
+    <div className="content-modal">
+        <div className="pw-content">
+            <div className="eins-modal-preview">
+                <img
+                    src={proyectsImg(`./fitflow.png`)}
+                    alt="FitFlow"
+                />
+            </div>
+
+            <div className="eins-modal-text">
+                <p>
+                    FitFlow – AI Personal Fitness Coach
+                </p>
+
+                <p>
+                    FitFlow is a full-stack AI-powered fitness coaching platform that generates personalized workout plans, diet recommendations, fitness insights, and progress tracking using Google Gemini AI, React, Node.js, Express, MongoDB, and OpenRouter APIs.
+                </p>
+
+                <div className="eins-modal-text-2">
+                    <span>Repo:</span>{" "}
+                    <a
+                        href="https://github.com/vanshikazawar27/FitFlow"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        GitHub Repository
+                    </a>
+                    <br />
+
+                    <span>Live:</span>{" "}
+                    <a
+                        href="https://fittfloww.vercel.app/"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        Live
+                    </a>
+
+                    <span>Demo:</span>{" "}
+                    <a
+                        href="https://youtu.be/your-demo-link"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        Demo
+                    </a>
+                </div>
+
+                <div className="eins-modal-text-3">
+                    <span>Tech Stack:</span>
+
+                    <div className="eins-modal-tec">
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                            alt="React"
+                        />
+
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+                            alt="Node.js"
+                        />
+
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg"
+                            alt="MongoDB"
+                        />
+
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
+                            alt="Express.js"
+                        />
+
+                        <img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original-wordmark.svg"
+                            alt="Tailwind CSS"
+                        />
+                    </div>
+
+                    <p className="tech-summary">
+                        React • Node.js • Express.js • MongoDB • Tailwind CSS • JWT Authentication • Fitness Analytics
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</Modal>
 
 
 

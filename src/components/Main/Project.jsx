@@ -15,6 +15,7 @@ import { Pagination, Autoplay } from "swiper";
 /* Img */
 import quickcartImg from '../../img/quickcart.png';
 import wandergoImg from '../../img/wandergo.png';
+import FitFlowImg from "../../img/FitFlow.png";
 
 const Project = () => {
     return (
@@ -154,12 +155,65 @@ const Project = () => {
             </a>
         </div>
     </SwiperSlide>
+
+    {/* FitFlow AI */}
+    <SwiperSlide className="caja">
+        <img
+            src={FitFlowImg}
+            alt="FitFlow"
+        />
+
+        <div className="content">
+            <h3>FitFlow</h3>
+
+            <p>
+                AI Personal Fitness Coach
+            </p>
+
+            <p className="tecnologias">
+                React
+                <span> - </span>
+                Node.js
+                <span> - </span>
+                Express.js
+                <span> - </span>
+                MongoDB
+                <span> - </span>
+                OpenRouter AI
+                 <span> - </span>
+                Google Gemini
+            </p>
+
+            <a
+                href="https://fittfloww.vercel.app/"
+                className="custom-btn btn-codigo"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <span>Demo</span>
+            </a>
+
+            <a
+                href="https://github.com/vanshikazawar27/FitFlow"
+                className="custom-btn btn-codigo"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Repository
+            </a>
+            <a
+                href="https://www.youtube.com/watch?v=-BSN9hWajEY"
+                className="custom-btn btn-codigo"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Video
+            </a>
+        </div>
+    </SwiperSlide>
 </Swiper>
                 <div className="swiper-pagination"></div>
             </div>
-            {/* <Link className="custom-btn btn-codigo portafolio-btn" to="/project">
-                More projects
-            </Link> */}
             <div className='portafolio-btn'>
                 <Link to="/project">
                     <ButtomGet/>

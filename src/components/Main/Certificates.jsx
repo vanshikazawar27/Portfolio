@@ -40,7 +40,6 @@ const certificates = [
         title: "OfficeMaster on Microsoft Office using ChatGPT and AI tools",
         category: "CERTIFICATION",
         watermark: "OFFICE",
-        //issuer: "Microsoft",
         date: "2025",
         color: "var(--secundario)",
         image: "microsoftoffice.png"
@@ -54,6 +53,26 @@ const certificates = [
         date: "2026",
         color: "var(--green)",
         image: "gen-ai.png"
+    },
+    {
+        id: 4,
+        title: "Cyber Security Analyst Job Simulation",
+        category: "PROGRAMMING",
+        watermark: "AI",
+        issuer: "Forage",
+        date: "2026",
+        color: "var(--green)",
+        image: "Forage.jpg"
+    },
+    {
+        id: 5,
+        title: "TechHack 2025 State Level Hackathon",
+        category: "PROGRAMMING",
+        //watermark: "AI",
+        //issuer: "Forage",
+        date: "2026",
+        color: "var(--green)",
+        image: "TechHack.jpeg"
     }
 ];
 
