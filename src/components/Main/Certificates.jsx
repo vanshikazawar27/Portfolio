@@ -73,6 +73,26 @@ const certificates = [
         date: "2026",
         color: "var(--green)",
         image: "Forage.jpg"
+    },
+    {
+        id: 6,
+        title: "AI Agents for Beginners",
+        category: "PROGRAMMING",
+        watermark: "AI",
+        issuer: "Simplilearn SkillUp",
+        date: "2026",
+        color: "var(--green)",
+        image: "AiAgent.png"
+    },
+    {
+        id: 7,
+        title: "n8n Course: No Code AI Agent Builder",
+        category: "PROGRAMMING",
+        watermark: "AI",
+        issuer: "Simplilearn SkillUp",
+        date: "2026",
+        color: "var(--green)",
+        image: "n8n.png"
     }
 ];
 

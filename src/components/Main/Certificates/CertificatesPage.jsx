@@ -60,6 +60,46 @@ const certificates = [
         date: "2026",
         color: "#8a2be2", /* Purple */
         image: "gen-ai.png"
+    },
+    {
+        id: 4,
+        title: "Cyber Security Analyst Job Simulation",
+        category: "PROGRAMMING",
+        watermark: "AI",
+        issuer: "Forage",
+        date: "2026",
+        color: "var(--green)",
+        image: "Forage.jpg"
+    },
+    {
+        id: 5,
+        title: "TechHack 2025 State Level Hackathon",
+        category: "PROGRAMMING",
+        //watermark: "AI",
+        //issuer: "Forage",
+        date: "2025",
+        color: "var(--green)",
+        image: "TechHack.jpeg"
+    },
+    {
+        id: 6,
+        title: "AI Agents for Beginners",
+        category: "PROGRAMMING",
+        watermark: "AI",
+        issuer: "Simplilearn SkillUp",
+        date: "2026",
+        color: "var(--green)",
+        image: "AiAgents.png"
+    },
+    {
+        id: 7,
+        title: "n8n Course: No Code AI Agent Builder",
+        category: "PROGRAMMING",
+        watermark: "AI",
+        issuer: "Simplilearn SkillUp",
+        date: "2026",
+        color: "var(--green)",
+        image: "n8n.png"
     }
 ];
 
