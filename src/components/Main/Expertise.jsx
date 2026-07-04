@@ -40,39 +40,34 @@ const skillCategories = [
     ],
   },
   {
-    title: "Backend Development",
-    skills: [
-      {
-        name: "Node.js",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-      },
-      {
-        name: "Java",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg",
-      },
-      {
-        name: "PHP",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
-      },
-    ],
-  },
-  {
-    title: "Databases",
-    skills: [
-      {
-        name: "MySQL",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg",
-      },
-      {
-        name: "PostgreSQL",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg",
-      },
-      {
-        name: "MongoDB",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain-wordmark.svg",
-      },
-    ],
-  },
+  title: "Backend & Database",
+  skills: [
+    {
+      name: "Node.js",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    },
+    {
+      name: "Express.js",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+    },
+    {
+      name: "MongoDB",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+    },
+    {
+      name: "Mongoose",
+      icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+    },
+    {
+      name: "Cloudinary",
+      icon: "https://cdn.simpleicons.org/cloudinary",
+    },
+    {
+      name: "REST APIs",
+      icon: "https://cdn.simpleicons.org/fastapi",
+    },
+  ],
+},
   {
     title: "Design & UI/UX",
     skills: [
@@ -86,6 +81,23 @@ const skillCategories = [
       },
     ],
   },
+  {
+  title: "AI & Integrations",
+  skills: [
+    {
+      name: "Google Gemini",
+      icon: "https://cdn.simpleicons.org/googlegemini",
+    },
+    {
+  name: "OpenRouter API",
+  icon: "https://openrouter.ai/favicon.ico",
+},
+    {
+      name: "LLM Integration",
+      icon: "https://cdn.simpleicons.org/googlegemini",
+    },
+  ],
+},
   {
     title: "Tools & Platforms",
     skills: [
@@ -114,6 +126,19 @@ const skillCategories = [
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original-wordmark.svg",
       },
     ],
+  },
+  {
+  title: "Development Practices",
+  skills: [
+    {
+      name: "Agile Workflow",
+      icon: "https://cdn.simpleicons.org/jira",
+    },
+    {
+      name: "Responsive Design",
+      icon: "https://cdn.simpleicons.org/tailwindcss",
+    },
+  ],
   },
 ];
 

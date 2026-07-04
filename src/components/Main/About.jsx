@@ -27,10 +27,6 @@ const About = () => (
                     I am continuously learning and exploring new technologies, with a particular interest in AI integration, system design, and problem-solving. I believe in writing clean, maintainable code and improving through consistent practice and real project experience.                </p>
                 <p>
                     My goal is to grow as a developer who not only builds impactful applications but also understands user needs and delivers meaningful digital experiences.                </p>
-                {/* <p>
-                    As I continue my journey in computer science, I aim to contribute to impactful projects and grow into a developer who not only builds solutions but also understands the people who use them.
-                </p> */}
-
                 
 
                 <div className="mas-info">

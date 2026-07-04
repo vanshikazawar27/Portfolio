@@ -40,6 +40,7 @@ const certificates = [
         title: "OfficeMaster on Microsoft Office using ChatGPT and AI tools",
         category: "CERTIFICATION",
         watermark: "OFFICE",
+        issuer: "OfficeMaster",
         date: "2025",
         color: "var(--secundario)",
         image: "microsoftoffice.png"
@@ -49,7 +50,7 @@ const certificates = [
         title: "TechHack 2025 State Level Hackathon",
         category: "PROGRAMMING",
         //watermark: "AI",
-        //issuer: "Forage",
+        issuer: "Rai University, Ahmedabad",
         date: "2025",
         color: "var(--green)",
         image: "TechHack.jpeg"
